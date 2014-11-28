@@ -1,0 +1,164 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://data.smartopendata.eu/",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "gcm",
+          "uri": "http://smod-ontologies.spaziodati.eu/gcm#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "tragsa",
+          "uri": "http://smod-ontologies.spaziodati.eu/tragsa#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Spanish/Tragsa/so/Habitat/\" + value",
+          "isRowNumberCell": false,
+          "columnName": "CODUE",
+          "rdfTypes": [
+            {
+              "uri": "http://smod-ontologies.spaziodati.eu/tragsa#Habitat",
+              "curie": "tragsa:Habitat"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://smod-ontologies.spaziodati.eu/gcm#identifier",
+              "curie": "gcm:identifier",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"SpanishPilot/Tragsa/so/Identifier/\" + value",
+                "isRowNumberCell": false,
+                "columnName": "CODUE",
+                "rdfTypes": [
+                  {
+                    "uri": "http://smod-ontologies.spaziodati.eu/gcm#Identifier",
+                    "curie": "gcm:Identifier"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://smod-ontologies.spaziodati.eu/gcm#localId",
+                    "curie": "gcm:localId",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "CODUE"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://data.smartopendata.eu/",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "gcm",
+          "uri": "http://smod-ontologies.spaziodati.eu/gcm#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "tragsa",
+          "uri": "http://smod-ontologies.spaziodati.eu/tragsa#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Spanish/Tragsa/so/Habitat/\" + value",
+          "isRowNumberCell": false,
+          "columnName": "idHabitat",
+          "rdfTypes": [
+            {
+              "uri": "http://smod-ontologies.spaziodati.eu/tragsa#Habitat",
+              "curie": "tragsa:Habitat"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://smod-ontologies.spaziodati.eu/gcm#identifier",
+              "curie": "gcm:identifier",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"SpanishPilot/Tragsa/so/Identifier/\" + value",
+                "isRowNumberCell": false,
+                "columnName": "idHabitat",
+                "rdfTypes": [
+                  {
+                    "uri": "http://smod-ontologies.spaziodati.eu/gcm#Identifier",
+                    "curie": "gcm:Identifier"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://smod-ontologies.spaziodati.eu/gcm#localId",
+                    "curie": "gcm:localId",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "idHabitat"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
