@@ -1,0 +1,188 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://data.smartopendata.eu/Spanish/Tragsa/so/",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "tragsa",
+          "uri": "http://smod-ontologies.spaziodati.eu/tragsa#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Parcel/\" + value",
+          "isRowNumberCell": false,
+          "columnName": "idParcel",
+          "rdfTypes": [
+            {
+              "uri": "http://smod-ontologies.spaziodati.eu/tragsa#Parcel",
+              "curie": "tragsa:Parcel"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://smod-ontologies.spaziodati.eu/tragsa#isLocatedIn",
+              "curie": "tragsa:isLocatedIn",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"ForestryTile/\" + value",
+                "isRowNumberCell": false,
+                "columnName": "idForestry",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://smod-ontologies.spaziodati.eu/tragsa#hasHabitat",
+              "curie": "tragsa:hasHabitat",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"Habitat/\" + value",
+                "isRowNumberCell": false,
+                "columnName": "idHabitat",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://smod-ontologies.spaziodati.eu/tragsa#hasWeather",
+              "curie": "tragsa:hasWeather",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "if (value == \"10\", \"VI (IV) 2 Wet genuine nemoromediterranean\", \nif (value == \"14\", \"VI(V)  cool-warm genuine Nemoral\",\nif (value == \"15\", \"VI fresh genuine Nemoral\", None)\n))",
+                "isRowNumberCell": false,
+                "columnName": "idPhytoCli"
+              }
+            },
+            {
+              "uri": "http://smod-ontologies.spaziodati.eu/tragsa#hasRainFallLevel",
+              "curie": "tragsa:hasRainFallLevel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "if (or(value == \"1\", value == \"2\"), \"Low\", \nif (or(or(value == \"3\", value == \"4\"), value == \"5\"), \"Medium\", \nif (or(value == \"6\", value == \"7\"), \"High\", \nNone)))",
+                "isRowNumberCell": false,
+                "columnName": "idRainFall"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://data.smartopendata.eu/Spanish/Tragsa/so/",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "tragsa",
+          "uri": "http://smod-ontologies.spaziodati.eu/tragsa#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Parcel/\" + value",
+          "isRowNumberCell": false,
+          "columnName": "idParcel",
+          "rdfTypes": [
+            {
+              "uri": "http://smod-ontologies.spaziodati.eu/tragsa#Parcel",
+              "curie": "tragsa:Parcel"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://smod-ontologies.spaziodati.eu/tragsa#isLocatedIn",
+              "curie": "tragsa:isLocatedIn",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"ForestryTile/\" + value",
+                "isRowNumberCell": false,
+                "columnName": "idForestry",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://smod-ontologies.spaziodati.eu/tragsa#hasHabitat",
+              "curie": "tragsa:hasHabitat",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"Habitat/\" + value",
+                "isRowNumberCell": false,
+                "columnName": "idHabitat",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://smod-ontologies.spaziodati.eu/tragsa#hasWeather",
+              "curie": "tragsa:hasWeather",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "if (value == \"10\", \"VI (IV) 2 Wet genuine nemoromediterranean\", \nif (value == \"14\", \"VI(V)  cool-warm genuine Nemoral\",\nif (value == \"15\", \"VI fresh genuine Nemoral\", None)\n))",
+                "isRowNumberCell": false,
+                "columnName": "idPhytoCli"
+              }
+            },
+            {
+              "uri": "http://smod-ontologies.spaziodati.eu/tragsa#hasRainFallLevel",
+              "curie": "tragsa:hasRainFallLevel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "if (or(value == \"1\", value == \"2\"), \"Low\", \nif (or(or(value == \"3\", value == \"4\"), value == \"5\"), \"Medium\", \nif (or(value == \"6\", value == \"7\"), \"High\", \nNone)))",
+                "isRowNumberCell": false,
+                "columnName": "idRainFall"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
