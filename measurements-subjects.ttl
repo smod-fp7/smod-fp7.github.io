@@ -1,0 +1,66 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix : <http://smod-fp7.github.io/concept-schemes/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+:measurements-subjects a skos:ConceptScheme ;
+  skos:hasTopConcept :AverageAnnualRainfallLevel, :Slope, :Runoff, :MaxAnnualTemperature, :MinAnnualTemperature, :AvgAnnualTemperature ;
+  dcterms:issued "2015-05-21"^^xsd:date ;
+  dcterms:modified "2015-05-21"^^xsd:date ;
+  dcterms:creator [foaf:PersonalProfileDocument <https://www.linkedin.com/in/tatianatarasova>] ;
+  cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  dcterms:title "Subjects of measurements expressed in SKOS"@en ;
+  dcterms:description "A rendition of the subjects of measurements as a SKOS concept scheme";
+  foaf:maker [foaf:homepage <http://www.smartopendata.eu/>];
+  vann:preferredPrefix "m-subj" .
+
+# -- 1. Average Annual Rainfall Level
+
+:AverageAnnualRainfallLevel a skos:Concept ;
+  skos:prefLabel "Average annual rainfall level"@en ;
+  skos:definition "Average measurements of rainfall level aggregated for a year"@en ;
+  skos:topConceptOf :measurements-subjects ;
+  skos:inScheme :measurements-subjects .
+
+# -- 2. Slope
+
+:Slope a skos:Concept ;
+  skos:prefLabel "Slope"@en ;
+  skos:definition "Slope"@en ;
+  skos:topConceptOf :measurements-subjects ;
+  skos:inScheme :measurements-subjects .
+
+# -- 3. Runoff
+
+:Runoff a skos:Concept ;
+  skos:prefLabel "Runoff"@en ;
+  skos:definition "Runoff"@en ;
+  skos:topConceptOf :measurements-subjects ;
+  skos:inScheme :measurements-subjects .
+
+# -- 4. Maximum Annual Temperature
+
+:MaximumAnnualTemperature a skos:Concept ;
+  skos:prefLabel "Maximum Annual Temperature"@en ;
+  skos:definition "Maximum Annual Temperature"@en ;
+  skos:topConceptOf :measurements-subjects ;
+  skos:inScheme :measurements-subjects .
+
+# -- 5. Minimum Annual Temperature
+
+:MinimumAnnualTemperature a skos:Concept ;
+  skos:prefLabel "Minimum Annual Temperature"@en ;
+  skos:definition "Minimum Annual Temperature"@en ;
+  skos:topConceptOf :measurements-subjects ;
+  skos:inScheme :measurements-subjects .
+
+# -- 6. Average Annual Temperature
+
+:AverageAnnualTemperature a skos:Concept ;
+  skos:prefLabel "Average Annual Temperature"@en ;
+  skos:definition "Average Annual Temperature"@en ;
+  skos:topConceptOf :measurements-subjects ;
+  skos:inScheme :measurements-subjects .
