@@ -1,0 +1,21 @@
+@prefix : <http://smod-fp7.github.io/components/components.ttl#> .
+@prefix : <http://purl.org/linked-data/cube#> .
+@prefix smod: <http://www.w3.org/2015/03/inspire/smod#> .
+@prefix ef: <http://www.w3.org/2015/03/inspire/ef#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:basePhenomenon a rdf:Property, qb:AttributeProperty;
+	rdfs:label "base phenomenon"@en;
+	rdfs:range rdfs:Literal.
+
+:hasObservedDeterminand a rdf:Property, qb:AttributeProperty;
+	rdfs:label "has observand determinand"@en;
+	rdfs:range smod:Determinand.
+
+:station a rdf:Property, qb:AttributeProperty;
+	rdfs:label "station"@en;
+	rdfs:range ef:EnvironmentalMonitoringStation.
+
+:numberOfSamples a rdf:Property, qb:AttributeProperty;
+	rdfs:label "has observand determinand"@en;
+	rdfs:range xsd:integer.
