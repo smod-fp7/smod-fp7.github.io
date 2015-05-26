@@ -1,0 +1,40 @@
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix smod-components: <http://smod-fp7.github.io/components/components.ttl#> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix smod: <http://www.w3.org/2015/03/inspire/smod#> .
+
+# --- Data Structure Definition ---
+
+<http://data.smartopendata.eu/WaterbaseLakes/HazardousSubstances/DSD/>
+	a qb:DataStructureDefinition ;
+	rdfs:comment "Data structure definition for hazardous substances reported in the Waterbase - Lakes dataset of the European Environment Agency and used in the Italian pilot of the SmartOpenData project, http://www.smartopendata.eu/"@en ;
+	qb:component [qb:attribute dcterms:subject ;
+				  qb:componentAttachment qb:DataSet ] ;
+	qb:component [qb:attribute smod-components:basePhenomenon ;
+				  qb:componentAttachment qb:DataSet ] ;
+	qb:component [qb:attribute sdmx-attribute:unitMeasure] ;
+	qb:component [qb:attribute smod-components:hasObservedDeterminand ] ;
+	qb:component [qb:attribute smod-components:numberOfSamples ] ;
+	qb:component [qb:attribute smod-components:station ] ;
+	qb:component [qb:measure dbpedia-owl:min ] ;
+	qb:component [qb:measure dbpedia-owl:max] ;
+	qb:component [qb:measure dbpedia-owl:median ] ;
+	qb:component [qb:measure dbpedia-owl:average ] ;
+	qb:component [qb:dimension sdmx-dimension:refPeriod ] .
+
+# --- Dataset ---
+
+<http://data.smartopendata.eu/WaterbaseLakes/HazardousSubstances/Dataset/>
+	a qb:DataSet ;
+	qb:structure <http://data.smartopendata.eu/WtaerbaseLakes/HazardousSubstances/DSD/> ;
+	rdfs:comment "Data on hazardous substances reported in the Waterbase - Lakes dataset of the European Environmental Agency."@en ;
+	dcterms:source <http://www.eea.europa.eu/data-and-maps/data/waterbase-lakes-10> ;
+	dcterms:subject <http://www.eionet.europa.eu/gemet/concept/9214> ;
+	dcterms:source smod-components:basePhenomenon .
+
