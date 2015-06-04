@@ -7,7 +7,6 @@
 @prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
 @prefix smod-components: <http://smod-fp7.github.io/components/components.ttl#> .
 @prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
-@prefix smod: <http://www.w3.org/2015/03/inspire/smod#> .
 
 # --- Data Structure Definition ---
 
@@ -15,6 +14,8 @@
 	a qb:DataStructureDefinition ;
 	rdfs:comment "Data structure definition for hazardous substances reported in the Waterbase - Lakes dataset of the European Environment Agency and used in the Italian pilot of the SmartOpenData project, http://www.smartopendata.eu/"@en ;
 	qb:component [qb:attribute dcterms:subject ;
+				  qb:componentAttachment qb:DataSet ] ;
+	qb:component [qb:attribute dcterms:source ;
 				  qb:componentAttachment qb:DataSet ] ;
 	qb:component [qb:attribute smod-components:basePhenomenon ;
 				  qb:componentAttachment qb:DataSet ] ;
@@ -36,5 +37,5 @@
 	rdfs:comment "Data on hazardous substances reported in the Waterbase - Lakes dataset of the European Environmental Agency."@en ;
 	dcterms:source <http://www.eea.europa.eu/data-and-maps/data/waterbase-lakes-10> ;
 	dcterms:subject <http://www.eionet.europa.eu/gemet/concept/9214> ;
-	dcterms:source smod-components:basePhenomenon .
+	smod-components:basePhenomenon "concentration".
 

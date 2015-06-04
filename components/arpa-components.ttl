@@ -14,8 +14,9 @@
 
 :station a rdf:Property, qb:AttributeProperty;
 	rdfs:label "station"@en;
+	rdfs:comment "Monitoring station that produced the observation"@en;
 	rdfs:range ef:EnvironmentalMonitoringStation.
 
 :numberOfSamples a rdf:Property, qb:AttributeProperty;
-	rdfs:label "has observand determinand"@en;
+	rdfs:label "number of samples"@en;
 	rdfs:range xsd:integer.

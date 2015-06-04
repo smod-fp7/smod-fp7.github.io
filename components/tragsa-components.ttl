@@ -1,0 +1,11 @@
+@prefix : <http://smod-fp7.github.io/components/components.ttl#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix smod: <http://www.w3.org/2015/03/inspire/smod#> .
+@prefix ef: <http://www.w3.org/2015/03/inspire/ef#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# components for the TRAGSA pilot
+
+:workunit a rdf:Property, qb:DimensionProperty;
+	rdfs:label "workunit"@en;
+	rdfs:range smod:WorkUnit.
