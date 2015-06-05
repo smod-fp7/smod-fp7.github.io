@@ -8,5 +8,5 @@
 
 :workUnit a rdf:Property, qb:DimensionProperty;
 	rdfs:label "work unit"@en;
-	rdfs:comment "This property links the Observation to the relevant Work Unit."@;
+	rdfs:comment "This property links the Observation to the relevant Work Unit."@en;
 	rdfs:range smod:WorkUnit.
