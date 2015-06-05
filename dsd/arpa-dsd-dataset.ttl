@@ -5,7 +5,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
 @prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
-@prefix smod-components: <http://smod-fp7.github.io/components/components.ttl#> .
+@prefix arpa-components: <http://smod-fp7.github.io/components/arpa-components.ttl#> .
 @prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
 
 # --- Data Structure Definition ---
@@ -17,12 +17,12 @@
 				  qb:componentAttachment qb:DataSet ] ;
 	qb:component [qb:attribute dcterms:source ;
 				  qb:componentAttachment qb:DataSet ] ;
-	qb:component [qb:attribute smod-components:basePhenomenon ;
+	qb:component [qb:attribute arpa-components:basePhenomenon ;
 				  qb:componentAttachment qb:DataSet ] ;
 	qb:component [qb:attribute sdmx-attribute:unitMeasure] ;
-	qb:component [qb:attribute smod-components:hasObservedDeterminand ] ;
-	qb:component [qb:attribute smod-components:numberOfSamples ] ;
-	qb:component [qb:attribute smod-components:station ] ;
+	qb:component [qb:attribute arpa-components:hasObservedDeterminand ] ;
+	qb:component [qb:attribute arpa-components:numberOfSamples ] ;
+	qb:component [qb:attribute arpa-components:station ] ;
 	qb:component [qb:measure dbpedia-owl:min ] ;
 	qb:component [qb:measure dbpedia-owl:max] ;
 	qb:component [qb:measure dbpedia-owl:median ] ;
@@ -37,5 +37,5 @@
 	rdfs:comment "Data on hazardous substances reported in the Waterbase - Lakes dataset of the European Environmental Agency."@en ;
 	dcterms:source <http://www.eea.europa.eu/data-and-maps/data/waterbase-lakes-10> ;
 	dcterms:subject <http://www.eionet.europa.eu/gemet/concept/9214> ;
-	smod-components:basePhenomenon "concentration".
+	arpa-components:basePhenomenon "concentration".
 

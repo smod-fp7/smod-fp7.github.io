@@ -6,7 +6,7 @@
 @prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
 @prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
 @prefix m-subj: <http://smod-fp7.github.io/measurements-subjects.ttl#> .
-@prefix components: <http://smod-fp7.github.io/components/components.ttl#> .
+@prefix tragsa-tragsa-components: <http://smod-fp7.github.io/tragsa-components.ttl#> .
 
 <http://data.smartopendata.eu/sp-pt-pilot/Climatology/DSD/>
 	a qb:DataStructureDefinition ;
@@ -15,7 +15,7 @@
 				  qb:componentAttachment qb:DataSet ] ;
 	qb:component [qb:attribute sdmx-attribute:unitMeasure] ;
 	qb:component [qb:attribute dcterms:subject] ;
-	qb:component [qb:attribute components:workUnit] ;
+	qb:component [qb:attribute tragsa-components:workUnit] ;
 	qb:component [qb:measure schema:minValue ] ;
 	qb:component [qb:measure schema:maxValue ] .
 
