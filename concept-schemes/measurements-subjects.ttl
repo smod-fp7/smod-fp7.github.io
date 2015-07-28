@@ -81,11 +81,11 @@
   skos:topConceptOf :measurements-subjects ;
   skos:inScheme :measurements-subjects .
 
-# -- 9. Annual Isolation Level
+# -- 9. Annual Insolation Level
 
 :AnnualIsolationLevel a skos:Concept ;
-  skos:prefLabel "Annual Isolation Level"@en ;
-  skos:definition "Annual Isolation Level"@en ;
+  skos:prefLabel "Annual Insolation Level"@en ;
+  skos:definition "Annual Insolation Level"@en ;
   skos:topConceptOf :measurements-subjects ;
   skos:inScheme :measurements-subjects .
 
