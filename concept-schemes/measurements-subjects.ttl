@@ -64,3 +64,35 @@
   skos:definition "Average Annual Temperature"@en ;
   skos:topConceptOf :measurements-subjects ;
   skos:inScheme :measurements-subjects .
+
+# -- 7. Annual Evapotranspiration Level
+
+:AnnualEvapotranspirationLevel a skos:Concept ;
+  skos:prefLabel "Annual Evapotranspiration Level"@en ;
+  skos:definition "Annual Evapotranspiration Level"@en ;
+  skos:topConceptOf :measurements-subjects ;
+  skos:inScheme :measurements-subjects .
+
+# -- 8. Annual Radiation Level
+
+:AnnualRadiationLevel a skos:Concept ;
+  skos:prefLabel "Annual Radiation Level"@en ;
+  skos:definition "Annual Radiation Level"@en ;
+  skos:topConceptOf :measurements-subjects ;
+  skos:inScheme :measurements-subjects .
+
+# -- 9. Annual Isolation Level
+
+:AnnualIsolationLevel a skos:Concept ;
+  skos:prefLabel "Annual Isolation Level"@en ;
+  skos:definition "Annual Isolation Level"@en ;
+  skos:topConceptOf :measurements-subjects ;
+  skos:inScheme :measurements-subjects .
+
+# -- 10. Annual Humidity Level
+
+:AnnualHumidityLevel a skos:Concept ;
+  skos:prefLabel "Annual Humidity Level"@en ;
+  skos:definition "Annual Humidity Level"@en ;
+  skos:topConceptOf :measurements-subjects ;
+  skos:inScheme :measurements-subjects .
