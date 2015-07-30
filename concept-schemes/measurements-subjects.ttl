@@ -7,13 +7,14 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 
 :measurements-subjects a skos:ConceptScheme ;
-  skos:hasTopConcept :AverageAnnualRainfallLevel, :Slope, :Runoff, :MaxAnnualTemperature, :MinAnnualTemperature, :AvgAnnualTemperature ;
+  skos:hasTopConcept :AverageAnnualRainfallLevel, :Slope, :Runoff, :MaxAnnualTemperature, :MinAnnualTemperature, :AvgAnnualTemperature , :AnnualEvapotranspirationLevel, ::AnnualRadiationLevel, :AnnualInsolationLevel, :AnnualHumidityLevel
   dcterms:issued "2015-05-21"^^xsd:date ;
   dcterms:modified "2015-05-21"^^xsd:date ;
+  dcterms:modified "2015-07-30"^^xsd:date ;
   dcterms:creator [foaf:PersonalProfileDocument <https://www.linkedin.com/in/tatianatarasova>] ;
   cc:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  dcterms:title "Subjects of measurements expressed in SKOS"@en ;
-  dcterms:description "A rendition of the subjects of measurements as a SKOS concept scheme";
+  dcterms:title "Subjects of climatology measurements expressed in SKOS"@en ;
+  dcterms:description "A rendition of the subjects of climatology measurements as a SKOS concept scheme";
   foaf:maker [foaf:homepage <http://www.smartopendata.eu/>];
   vann:preferredPrefix "m-subj" .
 
@@ -83,7 +84,7 @@
 
 # -- 9. Annual Insolation Level
 
-:AnnualIsolationLevel a skos:Concept ;
+:AnnualInsolationLevel a skos:Concept ;
   skos:prefLabel "Annual Insolation Level"@en ;
   skos:definition "Annual Insolation Level"@en ;
   skos:topConceptOf :measurements-subjects ;
