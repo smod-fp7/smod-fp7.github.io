@@ -8,9 +8,9 @@
 @prefix m-subj: <http://smod-fp7.github.io/measurements-subjects.ttl#> .
 @prefix tragsa-components: <http://smod-fp7.github.io/tragsa-components.ttl#> .
 
-<http://data.smartopendata.eu/sp-pt-pilot/Climatology/DSD/>
+<http://data.smartopendata.eu/sp-pt-pilot/WorkUnit-Climatology/DSD/>
 	a qb:DataStructureDefinition ;
-	rdfs:comment "data structure definition for Climatology, Spanish-Portuguese pilot"@en ;
+	rdfs:comment "Data structure definition for a dataset with climatology measurements of Work Units generated in the settings of the Spanish-Portuguese pilot of the Smart Open Data project, http://www.smartopendata.eu/"@en ;
 	qb:component [qb:dimension sdmx-dimension:refPeriod ;
 				  qb:componentAttachment qb:DataSet ] ;
 	qb:component [qb:attribute sdmx-attribute:unitMeasure] ;
@@ -19,8 +19,8 @@
 	qb:component [qb:measure schema:minValue ] ;
 	qb:component [qb:measure schema:maxValue ] .
 
-<http://data.smartopendata.eu/sp-pt-pilot/Climatology/Dataset/>
+<http://data.smartopendata.eu/sp-pt-pilot/WorkUnit-Climatology/Dataset/>
 	a qb:DataSet ;
-	qb:structure <http://data.smartopendata.eu/sp-pt-pilot/Climatology/DSD/> ;
-	rdfs:comment "Measurements of WorkUnits aggregated for the period 1981-2010 and represented as intervals via min and max values."@en ;
+	qb:structure <http://data.smartopendata.eu/sp-pt-pilot/WorkUnit-Climatology/DSD/> ;
+	rdfs:comment "Data set with measurements of Work Units aggregated for the period 1981-2010 and represented as intervals via min and max values. Data set is compiled for the Spanish-Portuguese pilot of the Smart Open Data project, http://www.smartopendata.eu/"@en ;
 	sdmx-dimension:refPeriod <http://reference.data.gov.uk/id/gregorian-interval/1981-01-01T00:00:00/P21Y> .
