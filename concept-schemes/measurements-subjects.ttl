@@ -7,7 +7,7 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 
 :measurements-subjects a skos:ConceptScheme ;
-  skos:hasTopConcept :AverageAnnualRainfallLevel, :Slope, :Runoff, :MaxAnnualTemperature, :MinAnnualTemperature, :AvgAnnualTemperature , :AnnualEvapotranspirationLevel, ::AnnualRadiationLevel, :AnnualInsolationLevel, :AnnualHumidityLevel
+  skos:hasTopConcept :AverageAnnualRainfallLevel, :Slope, :Runoff, :MaxAnnualTemperature, :MinAnnualTemperature, :AvgAnnualTemperature , :AnnualEvapotranspirationLevel, ::AnnualRadiationLevel, :AnnualInsolationLevel, :AnnualHumidityLevel ;
   dcterms:issued "2015-05-21"^^xsd:date ;
   dcterms:modified "2015-05-21"^^xsd:date ;
   dcterms:modified "2015-07-30"^^xsd:date ;
