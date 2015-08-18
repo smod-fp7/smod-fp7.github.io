@@ -18,7 +18,7 @@
   foaf:maker [foaf:homepage <http://www.smartopendata.eu/>];
   vann:preferredPrefix "m-subj" .
 
-# -- 1. Average Annual Rainfall Level
+# 1. Average Annual Rainfall Level
 
 :AverageAnnualRainfallLevel a skos:Concept ;
   skos:prefLabel "Average annual rainfall level"@en ;
@@ -26,7 +26,7 @@
   skos:topConceptOf :measurements-subjects ;
   skos:inScheme :measurements-subjects .
 
-# -- 2. Slope
+# 2. Slope
 
 :Slope a skos:Concept ;
   skos:prefLabel "Slope"@en ;
@@ -34,7 +34,7 @@
   skos:topConceptOf :measurements-subjects ;
   skos:inScheme :measurements-subjects .
 
-# -- 3. Runoff
+# 3. Runoff
 
 :Runoff a skos:Concept ;
   skos:prefLabel "Runoff"@en ;
@@ -42,7 +42,7 @@
   skos:topConceptOf :measurements-subjects ;
   skos:inScheme :measurements-subjects .
 
-# -- 4. Maximum Annual Temperature
+# 4. Maximum Annual Temperature
 
 :MaximumAnnualTemperature a skos:Concept ;
   skos:prefLabel "Maximum Annual Temperature"@en ;
@@ -50,7 +50,7 @@
   skos:topConceptOf :measurements-subjects ;
   skos:inScheme :measurements-subjects .
 
-# -- 5. Minimum Annual Temperature
+# 5. Minimum Annual Temperature
 
 :MinimumAnnualTemperature a skos:Concept ;
   skos:prefLabel "Minimum Annual Temperature"@en ;
@@ -58,7 +58,7 @@
   skos:topConceptOf :measurements-subjects ;
   skos:inScheme :measurements-subjects .
 
-# -- 6. Average Annual Temperature
+# 6. Average Annual Temperature
 
 :AverageAnnualTemperature a skos:Concept ;
   skos:prefLabel "Average Annual Temperature"@en ;
@@ -66,7 +66,7 @@
   skos:topConceptOf :measurements-subjects ;
   skos:inScheme :measurements-subjects .
 
-# -- 7. Annual Evapotranspiration Level
+# 7. Annual Evapotranspiration Level
 
 :AnnualEvapotranspirationLevel a skos:Concept ;
   skos:prefLabel "Annual Evapotranspiration Level"@en ;
@@ -74,7 +74,7 @@
   skos:topConceptOf :measurements-subjects ;
   skos:inScheme :measurements-subjects .
 
-# -- 8. Annual Radiation Level
+# 8. Annual Radiation Level
 
 :AnnualRadiationLevel a skos:Concept ;
   skos:prefLabel "Annual Radiation Level"@en ;
@@ -82,7 +82,7 @@
   skos:topConceptOf :measurements-subjects ;
   skos:inScheme :measurements-subjects .
 
-# -- 9. Annual Insolation Level
+# 9. Annual Insolation Level
 
 :AnnualInsolationLevel a skos:Concept ;
   skos:prefLabel "Annual Insolation Level"@en ;
@@ -90,7 +90,7 @@
   skos:topConceptOf :measurements-subjects ;
   skos:inScheme :measurements-subjects .
 
-# -- 10. Annual Humidity Level
+# 10. Annual Humidity Level
 
 :AnnualHumidityLevel a skos:Concept ;
   skos:prefLabel "Annual Humidity Level"@en ;
