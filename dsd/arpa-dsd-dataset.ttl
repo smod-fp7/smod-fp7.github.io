@@ -5,10 +5,10 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
 @prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
-@prefix arpa-components: <http://smod-fp7.github.io/components/arpa-components.ttl#> .
+@prefix arpa-components: <http://smod-fp7.github.io/components/arpa-components#> .
 @prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
 
-# --- Data Structure Definition ---
+# Data Structure Definition
 
 <http://data.smartopendata.eu/WaterbaseLakes/HazardousSubstances/DSD/>
 	a qb:DataStructureDefinition ;
@@ -48,7 +48,7 @@
 	qb:component [qb:measure dbpedia-owl:average ] ;
 	qb:component [qb:dimension sdmx-dimension:refPeriod ] .
 
-# --- Dataset ---
+# Dataset
 
 <http://data.smartopendata.eu/WaterbaseLakes/HazardousSubstances/Dataset/>
 	a qb:DataSet ;
