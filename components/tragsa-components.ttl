@@ -1,4 +1,4 @@
-@prefix : <http://smod-fp7.github.io/components/tragsa-components.ttl#> .
+@prefix : <http://smod-fp7.github.io/components/tragsa-components#> .
 @prefix qb: <http://purl.org/linked-data/cube#> .
 @prefix smod: <http://www.w3.org/2015/03/inspire/smod#> .
 @prefix ef: <http://www.w3.org/2015/03/inspire/ef#> .

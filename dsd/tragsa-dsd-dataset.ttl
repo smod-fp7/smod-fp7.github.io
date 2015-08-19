@@ -5,8 +5,8 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
 @prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
-@prefix m-subj: <http://smod-fp7.github.io/measurements-subjects.ttl#> .
-@prefix tragsa-components: <http://smod-fp7.github.io/tragsa-components.ttl#> .
+@prefix m-subj: <http://smod-fp7.github.io/measurements-subjects#> .
+@prefix tragsa-components: <http://smod-fp7.github.io/tragsa-components#> .
 
 <http://data.smartopendata.eu/sp-pt-pilot/WorkUnit-Climatology/DSD/>
 	a qb:DataStructureDefinition ;
